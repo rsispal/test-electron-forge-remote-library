@@ -26,6 +26,9 @@
  * ```
  */
 
-import './index.css';
+import "./index.css";
+import * as Remote from "@electron/remote/";
+
+new Remote.Notification({ title: "Title", body: "This is a test" }).show();
 
 console.log('👋 This message is being logged by "renderer.js", included via webpack');
